@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="40dp"
+        android:text="Регистрация"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Имя Фамилия"
+        app:layout_constraintBottom_toTopOf="@+id/etNameReg"
+        app:layout_constraintStart_toStartOf="@+id/etNameReg" />
+
+    <EditText
+        android:id="@+id/etNameReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        tools:layout_editor_absoluteX="101dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Почта"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailReg"
+        app:layout_constraintStart_toStartOf="@+id/etEmailReg" />
+
+    <EditText
+        android:id="@+id/etEmailReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/etNameReg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNameReg" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Пароль"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordReg"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordReg" />
+
+    <EditText
+        android:id="@+id/etPasswordReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bEnterReg"
+        app:layout_constraintEnd_toEndOf="@+id/etEmailReg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etEmailReg" />
+
+    <Button
+        android:id="@+id/bEnterReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordReg"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordReg"
+        tools:layout_editor_absoluteY="518dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
